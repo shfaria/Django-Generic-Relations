@@ -1,0 +1,16 @@
+_HiStOrY_V2_
+{'one':1}
+{'one':1}\040+\040{2:"two"}
+{'one':1}\040+\040*{2:"two"}
+from demo.models import *
+Activity.objects.filter(comments__object = 1)
+Activity.objects.filter(comments__user = 1)
+Activity.objects.filter(comments__user = user)
+Activity.objects.filter(comments__user = (User.objects.first()))
+Activity.objects.filter(comments__user = 1)
+Activity.objects.filter(comments__id = 1)
+Activity.objects.filter(comments__text = 1)
+Activity.objects.values("commnets")
+Activity.objects.values("comments")
+import readline
+readline.write_history_file("py-his2.txt")
